@@ -20,18 +20,18 @@ function Wrapper() {
         <div className="wrapper" style={{ overflow: "visible" }}>
 
             <header id="main-header" className="lavalamp-menu">
-                <nav class="navbar navbar-expand-lg p-0">
+                <nav class="navbar navbar-expand-lg">
                     <ul>
 
                         <button class="navbar-toggler shadow-sm text-dark fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="bi bi-list"></i>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarText">
+
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarText" style={{ width: "100%" }}>
                             <li className="active"><a href="#welcome"> Cleo Torniado</a></li>
                             <li><a href="#aboutme"><span>About Me</span></a></li>
                             <li><a href="#projects"><span>Projects</span></a></li>
-                            <li><a href="#work"><span>Prev Work</span></a></li>
-                            <li><a href="#contact"><span>Contact</span></a></li>
+                            <li><a href="#footer"><span>Contact</span></a></li>
 
                             <li>
                                 <button className="btn-hover color-white"
@@ -55,7 +55,6 @@ function Wrapper() {
             <FinalHero />
             <AboutMe theme={theme} /> <br />
             <Projects theme={theme} /> <br />
-            <WorkExp theme={theme} /> <br />
             <Footer theme={theme} />
 
 

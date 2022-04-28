@@ -8,18 +8,18 @@ import logo from "../Images/logo.png"
 const Footer = (props) => {
     return (
 
-        <div className={`${props.theme}-secondary container-fluid p-5 row text-center text-lg-start`} id="footer" >
+        <div className={`${props.theme}-primary container-fluid p-5 row text-center text-lg-start`} id="footer" >
 
             <div className="col-12 col-lg-4 message mx-auto">
 
                 <div className="py-5">
-                    <Paragraph1 theme={props.theme} selector="secondary" >
+                    <Paragraph1 theme={props.theme} selector="primary" >
                         Cleo Beverly Torniado <br />
                         <img src={logo} alt="logo" style={{ width: "50px" }} /><br />
                     </Paragraph1>
                 </div>
 
-                <Paragraph2 theme={props.theme} selector="secondary" >
+                <Paragraph2 theme={props.theme} selector="primary" >
 
                     0905 401 8806 <br />
                     cleo.torniado@gmail.com<br />
@@ -27,7 +27,7 @@ const Footer = (props) => {
                 </Paragraph2>
 
                 <div className="py-2 py-lg-5">
-                    <Paragraph1 theme={props.theme} selector="secondary" >
+                    <Paragraph1 theme={props.theme} selector="primary" >
                         <a className="fs-1 m-3" href="https://github.com/cgtorniado"><i className="bi bi-github"></i></a>
                         <a className="fs-1 m-3 " href="https://www.linkedin.com/in/cleo-beverly-torniado-506b0512a/"><i className="bi bi-linkedin"></i></a>
                         <a className="fs-1 m-3 " href="https://instagram.com/okay28x"><i className="bi bi-instagram"></i></a>
@@ -37,11 +37,11 @@ const Footer = (props) => {
             </div>
 
             <div className="col-12 col-lg-3 py-2 py-lg-5">
-                <Paragraph1 theme={props.theme} selector="secondary" >
+                <Paragraph1 theme={props.theme} selector="primary" >
                     Projects<br />
                 </Paragraph1>
 
-                <Paragraph2 theme={props.theme} selector="secondary" >
+                <Paragraph2 theme={props.theme} selector="primary" >
                     <a href="http://cgtorniado.github.io">E-Magazine<br /></a>
                     <a href="https://coopersunnypetshop.vercel.app/">Pet Shop<br /></a>
                     <a href="https://myfirstblog-psi.vercel.app/">Blog<br /></a>
@@ -54,7 +54,7 @@ const Footer = (props) => {
             <div className="col-12 col-lg-5 p-3 py-lg-5">
                 <Paragraph1 textValue="Reach Out"
                     theme={props.theme}
-                    selector="secondary" />
+                    selector="primary" />
 
                 <div className="pb-5">
                     <div className="mb-3">

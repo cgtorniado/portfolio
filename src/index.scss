@@ -5,16 +5,16 @@
 }
 
 // Variables
-$bg-gradient: linear-gradient(90deg, #380036 15%, #0CBABA 100%);
+$bg-gradient: linear-gradient(225deg, #0c1898 15%, #0CBABA 100%);
 $themeblack: #0a0a0a;
 
 
 // Mixins
 @mixin gradienttext {
-  background: #380036;
-  background: -webkit-linear-gradient(to left, #380036 0%, #0CBABA 100%);
-  background: -moz-linear-gradient(to left, #380036 0%, #0CBABA 100%);
-  background: linear-gradient(to left, #380036 0%, #0CBABA 100%);
+  background: #0c1898;
+  background: -webkit-linear-gradient(to left, #0c1898 0%, #0CBABA 100%);
+  background: -moz-linear-gradient(to left, #0c1898 0%, #0CBABA 100%);
+  background: linear-gradient(to left, #0c1898 0%, #0CBABA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -38,7 +38,7 @@ $themeblack: #0a0a0a;
 /* ============= Animation background ========= */
 .herobackground {
   background: $bg-gradient;
-  background-size: 150% 200%;
+  background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
   height: 100vh;
@@ -50,11 +50,14 @@ $themeblack: #0a0a0a;
 /* ================= Header ============ */
 .herohead {
   position: absolute;
+  height: 100vh;
+  width: 100vw;
   top: 15%;
-  left: 5%;
-  width: 100%;
+  left: 0;
   text-align: center;
   color: #EFEEF5;
+  width: "100%";
+  height: "100%"
 
 }
 
@@ -120,8 +123,67 @@ code {
 }
 
 #root .wrapper .white-secondary {
-  background: rgba(12, 186, 186, 1) 100%
+  background: rgb(12, 24, 152) 100%
 }
+
+.H1FontStyle-white-primary,
+.H1FontStyle-white-secondary,
+.H1FontStyle-white-gradient,
+.herotitle {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.herobody,
+.H2FontStyle-white-primary,
+.H2FontStyle-white-secondary,
+.H2FontStyle-white-gradient,
+.H3FontStyle-white-primary,
+.H3FontStyle-white-secondary,
+.H3FontStyle-white-gradient,
+.paraFontStyle-white-primary,
+.paraFontStyle-white-secondary,
+.paraFontStyle-white-gradient {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.herotitle,
+.herobody,
+.H1FontStyle-black-primary,
+.H1FontStyle-black-secondary,
+.H1FontStyle-black-gradient,
+.H2FontStyle-black-primary,
+.H2FontStyle-black-secondary,
+.H2FontStyle-black-gradient,
+.H3FontStyle-black-primary,
+.H3FontStyle-black-secondary,
+.H3FontStyle-black-gradient,
+.paraFontStyle-black-primary,
+.paraFontStyle-black-secondary,
+.paraFontStyle-black-gradient {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.herotitle,
+.H1FontStyle-gradient-primary,
+.H1FontStyle-gradient-secondary,
+.H1FontStyle-gradient-gradient {
+  font-family: 'Suez One', serif;
+}
+
+.herobody,
+.H2FontStyle-gradient-primary,
+.H2FontStyle-gradient-secondary,
+.H2FontStyle-gradient-gradient,
+.H3FontStyle-gradient-primary,
+.H3FontStyle-gradient-secondary,
+.H3FontStyle-gradient-gradient,
+.paraFontStyle-gradient-primary,
+.paraFontStyle-gradient-secondary,
+.paraFontStyle-gradient-gradient {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
 
 
 .H1FontStyle-white-primary,
@@ -404,8 +466,8 @@ img.Bubble4par {
   position: fixed;
   top: 0;
   width: 100vw;
-  background: #FFF;
-  font-size: 3vh;
+  background: rgba(255, 255, 255, 0.727);
+  font-size: 3.5vh;
   z-index: 99;
   padding: 0;
   margin: 0;
@@ -434,10 +496,9 @@ img.Bubble4par {
 }
 
 .lavalamp-menu .active a {
-  background-color: #0CBABA;
+  @include gradienttext;
   display: inline-block;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
+  text-decoration: underline !important;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -451,7 +512,6 @@ img.Bubble4par {
 
 
 #footer a {
-  color: inherit;
   text-decoration: none;
 
   &:hover {

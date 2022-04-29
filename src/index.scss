@@ -129,11 +129,11 @@ code {
 .H1FontStyle-white-primary,
 .H1FontStyle-white-secondary,
 .H1FontStyle-white-gradient,
-.herotitle {
-  font-family: 'Archivo Black', sans-serif;
+.herotitle-white {
+  font-family: 'Rubik Glitch', cursive;
 }
 
-.herobody,
+.herobody-white,
 .H2FontStyle-white-primary,
 .H2FontStyle-white-secondary,
 .H2FontStyle-white-gradient,
@@ -143,44 +143,52 @@ code {
 .paraFontStyle-white-primary,
 .paraFontStyle-white-secondary,
 .paraFontStyle-white-gradient {
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: 'Overpass', sans-serif;
 }
 
-.herotitle,
-.herobody,
+.herotitle-black,
 .H1FontStyle-black-primary,
 .H1FontStyle-black-secondary,
 .H1FontStyle-black-gradient,
+.H3FontStyle-black-primary,
+.H3FontStyle-black-secondary,
+.H3FontStyle-black-gradient {
+  font-family: 'Source Code Pro',
+    monospace;
+  font-weight: 900;
+}
+
+.herobody-black,
 .H2FontStyle-black-primary,
 .H2FontStyle-black-secondary,
 .H2FontStyle-black-gradient,
-.H3FontStyle-black-primary,
-.H3FontStyle-black-secondary,
-.H3FontStyle-black-gradient,
 .paraFontStyle-black-primary,
 .paraFontStyle-black-secondary,
 .paraFontStyle-black-gradient {
   font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
 }
 
-.herotitle,
+.herotitle-gradient,
 .H1FontStyle-gradient-primary,
 .H1FontStyle-gradient-secondary,
-.H1FontStyle-gradient-gradient {
-  font-family: 'Suez One', serif;
+.H1FontStyle-gradient-gradient,
+.H3FontStyle-gradient-primary,
+.H3FontStyle-gradient-secondary,
+.H3FontStyle-gradient-gradient {
+  font-family: 'Elsie',
+    cursive;
 }
 
-.herobody,
+.herobody-gradient,
 .H2FontStyle-gradient-primary,
 .H2FontStyle-gradient-secondary,
 .H2FontStyle-gradient-gradient,
-.H3FontStyle-gradient-primary,
-.H3FontStyle-gradient-secondary,
-.H3FontStyle-gradient-gradient,
 .paraFontStyle-gradient-primary,
 .paraFontStyle-gradient-secondary,
 .paraFontStyle-gradient-gradient {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Karla',
+    sans-serif;
 }
 
 
@@ -513,6 +521,7 @@ img.Bubble4par {
 
 #footer a {
   text-decoration: none;
+  color: inherit;
 
   &:hover {
     @include gradienttext

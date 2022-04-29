@@ -2,10 +2,9 @@ import { useState } from "react";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import '../index.css'
-import WorkExp from "./WorkExp";
+import Experience from "./Experience"
 import Footer from "./Footer";
 import FinalHero from "./FinalHero";
-import Logo from '../Images/logo.png'
 
 
 function Wrapper() {
@@ -52,9 +51,10 @@ function Wrapper() {
                 </nav>
             </header>
 
-            <FinalHero />
+            <FinalHero theme={theme} />
             <AboutMe theme={theme} /> <br />
             <Projects theme={theme} /> <br />
+            <Experience theme={theme} /> <br />
             <Footer theme={theme} />
 
 

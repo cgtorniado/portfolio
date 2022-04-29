@@ -5,7 +5,7 @@ import TechStack from "./TechStack";
 import Grid from '@mui/material/Grid';
 import Paragraph1 from "../ComponentTypography/Paragraph1";
 import ProjectRight from "./ProjectRight";
-
+import { Parallax } from "react-scroll-parallax";
 
 const Projects = (props) => {
     return (
@@ -17,21 +17,29 @@ const Projects = (props) => {
 
                 <Grid item xs={12} sm={12} md={5}>
 
-                    <div id="projecttitle" style={{ height: "100vh", padding: "3em" }}>
-                        <Heading1 textValue="Projects"
-                            theme={props.theme}
-                            selector="secondary" />
+                    <div id="projecttitle" className="pt-lg-5" style={{ height: "100vh", padding: "3em" }}>
+                        <Parallax speed={1}>
+                            <Heading1 textValue="Projects"
+                                theme={props.theme}
+                                selector="secondary" />
+                        </Parallax>
 
                         <br />
                         <br />
-                        <Paragraph1 textValue="Here are my projects, and the web technologies used to create them. This website was made mostly with ReactJs and SASS, with some MUI components"
-                            theme={props.theme}
-                            selector="secondary" />
 
-                        <div className={`stackcontainer pt-1 pt-lg-5`} style={{ height: "50%", width: "100%" }}>
-                            <TechStack theme={props.theme} />
 
-                        </div>
+                        <Parallax speed={10}>
+                            <Paragraph1 textValue="Here are my projects, and the web technologies used to create them."
+                                theme={props.theme}
+                                selector="secondary" />
+
+                            <div className={`stackcontainer pt-1 pt-lg-5`} style={{ height: "50%", width: "100%" }}>
+                                <TechStack theme={props.theme} />
+                            </div>
+
+                        </Parallax>
+
+
 
                     </div>
 
@@ -46,7 +54,7 @@ const Projects = (props) => {
                 </Grid>
 
             </Grid>
-        </div>
+        </div >
     )
 
 }
